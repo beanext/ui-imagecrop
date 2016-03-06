@@ -1,0 +1,21 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+$fa-font-path: "../bower_components/font-awesome/fonts";
+// bower:scss
+@import "font-awesome/scss/font-awesome.scss";
+// endbower
+
+.imgCropper-controls {
+  position: absolute;
+  bottom: -5px;
+  margin: auto;
+  width: 100%;
+  &:hover {
+    button {
+      opacity: 1;
+    }
+  }
+  button {
+    opacity: 0;
+  }
+
+}

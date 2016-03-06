@@ -1,0 +1,39 @@
+<div class="modal-header">
+</div>
+<div class="modal-body">
+  <div class="row">
+    <div class="col-xs-9">
+      <div class="text-center" style="position:relative;margin:auto;height:300px;width:300px;padding:3px;overflow:hidden;border:3px dashed #CCCCCC;">
+        <image-cropper ng-if="myImage" image-url="{{myImage}}"
+                       width=80
+                       height="80"
+                       show-controls="true"
+                       fit-on-init="false"
+                       mask-width="30"
+                       center-on-init="true"
+                       api="getApiFunction"
+                       crop-callback="myCallbackFunction"
+                       check-cross-origin="false"
+                       zoom-step="0.1"
+                       action-labels="myButtonLabelsObject"
+        ></image-cropper>
+        <a style="position: absolute;top: 133px;width: 100px;left: 100px;height: 34px;" role="button" ng-if="!file" ngf-select="upload($file)"
+           class="btn btn-primary">选择文件</a>
+      </div>
+    </div>
+    <div class="col-xs-3 text-left">
+      <span style="color: #CCCCCC;">效果预览</span>
+      <div style="width:80px;height:80px;border:1px solid #CCCCCC;overflow: hidden;">
+        <img ng-src="{{myCroppedImage}}">
+      </div>
+      <span style="height:0px;width:80px;display:block;border-top:1px dashed #CCCCCC;margin:15px 0;"></span>
+      <div style="width:80px;height:80px;border:1px solid #CCCCCC;border-radius: 80px;overflow: hidden;">
+        <img ng-src="{{myCroppedImage}}">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-primary" type="button" ng-click="cancel()">OK</button>
+  <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+</div>

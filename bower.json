@@ -1,0 +1,38 @@
+{
+  "name": "ui-imagecrop",
+  "homepage": "https://github.com/beanext/ui-imagecrop",
+  "authors": [
+    "Ethan Zhao"
+  ],
+  "main": [
+  ],
+  "ignore": [
+    "**/.*",
+    "lib*",
+    "src*",
+    "node_modules",
+    "bower_components",
+    "test*",
+    "demo*",
+    "example*",
+    "GruntFile.js",
+    "package.json"
+  ],
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "^1.4.0",
+    "angular-bootstrap": "1.1.2",
+    "angular-animate": "~1.4.8",
+    "angular-route": "~1.4.8",
+    "angular-resource": "~1.4.8",
+    "font-awesome": "^4.4.0",
+    "angular-sanitize": "~1.4.8",
+    "ng-file-upload": "~9.1.2",
+    "angular-ui-router": "~0.2.15"
+  },
+  "devDependencies": {
+    "bootstrap": "~3.3.6",
+    "angular-mocks": "^1.4.0"
+  },
+  "moduleName": "uiztreeApp"
+}
