@@ -2,11 +2,12 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 $fa-font-path: "../bower_components/font-awesome/fonts";
 // bower:scss
 @import "font-awesome/scss/font-awesome.scss";
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
 .imgCropper-controls {
   position: absolute;
-  bottom: -5px;
+  bottom: -26px;
   margin: auto;
   width: 100%;
   &:hover {

@@ -3,13 +3,14 @@
 <div class="modal-body">
   <div class="row">
     <div class="col-xs-9">
-      <div class="text-center" style="position:relative;margin:auto;height:300px;width:300px;padding:3px;overflow:hidden;border:3px dashed #CCCCCC;">
+      <div class="text-center" style="position:relative;margin:auto;height:300px;width:300px;padding:3px;border:3px dashed #CCCCCC;">
         <image-cropper ng-if="myImage" image-url="{{myImage}}"
                        width=80
                        height="80"
                        show-controls="true"
-                       fit-on-init="false"
-                       mask-width="30"
+                       fit-on-init="true"
+                       crop-on-fly="true"
+                       crop-auto="true"
                        center-on-init="true"
                        api="getApiFunction"
                        crop-callback="myCallbackFunction"
