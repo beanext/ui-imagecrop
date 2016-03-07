@@ -8,6 +8,7 @@
     "dist/beanext-ui-imagecrop.js"
   ],
   "ignore": [
+    "app*",
     "**/.*",
     "lib*",
     "src*",
@@ -19,9 +20,13 @@
     "GruntFile.js",
     "package.json"
   ],
-  "version": "0.0.1",
+  "version": "0.0.2",
   "dependencies": {
-    "angular": "^1.4.0",
+    "angular": "^1.4.0"
+  },
+  "license": "LGPLv3",
+  "devDependencies": {
+    "angular-mocks": "^1.4.0",
     "angular-bootstrap": "1.1.2",
     "angular-animate": "^1.4.0",
     "angular-resource": "^1.4.0",
@@ -29,9 +34,6 @@
     "angular-sanitize": "^1.4.0",
     "ng-file-upload": "~9.1.2",
     "bootstrap-sass-official": "^3.2.0"
-  },
-  "devDependencies": {
-    "angular-mocks": "^1.4.0"
   },
   "moduleName": "uiImagecropApp"
 }
