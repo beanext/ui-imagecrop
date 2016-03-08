@@ -786,7 +786,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' && module.ex
                 }
                 self.area.processMouseMove(pageX - offset.left, pageY - offset.top);
                 self.area.drawScene();
-                if (self.options.cropOnFly) {
+                if (self.options.cropOnFly && self._resizeCtrlIsDragging > -1) {
                   self.cropImage();
                 }
               }
