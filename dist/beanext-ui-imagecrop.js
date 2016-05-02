@@ -1694,5 +1694,4 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' && module.ex
       /******/
     ])
   })(angular);
-})
-(window, window.angular)
+})(window, window.angular);
